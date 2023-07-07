@@ -2,11 +2,10 @@
 FROM node:18-alpine AS base
 WORKDIR /app
 COPY package.json .
+
+FROM base AS prod
 RUN yarn install
 
-FROM base AS test
-# Make one tests to ci/cd
-
 FROM nginx
-COPY --from=base /app/dist .
+COPY --from=prod /app/dist /usr/share/nginx/html
 EXPOSE 80

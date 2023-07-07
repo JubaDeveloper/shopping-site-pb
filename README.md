@@ -22,13 +22,13 @@
 
 # ✅ The project technologies
 
-- `Docker` - To image build and ci/cd concepts (Pending to come 🕒)
+- `Docker` - To image build and ci/cd concepts ✔️
 - `TailwindCSS` - The library to make easily work with css ✔️
 - `MirageJS` - The library to make tests using fake back-end (Pending to come 🕒)
-- `Typescript` - The fully typed language to make more readable your project
-- `Vite` - Server to set up the project
-- `React` - The library to make the
-- `Git workflow` - Going ahead and automating the process of build, deploy, register... (ci/cd)
+- `Typescript` - The fully typed language to make more readable your project ✔️
+- `Vite` - Server to set up the project ✔️
+- `React` - The library to make the website ✔️
+- `Git workflow` - Going ahead and automating the process of build, deploy, register... (ci/cd) ✔️
 
 # 🛠️ Installation/Initialization process - Without Docker
 

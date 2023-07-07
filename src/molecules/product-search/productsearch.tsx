@@ -1,7 +1,7 @@
 import { ChangeEvent, ReactElement } from "react";
 
 interface IProductSearchProps {
-    onSearchChange: (text: string) => never
+    onSearchChange: (text: string) => unknown
     type: React.HTMLInputTypeAttribute
 }
 

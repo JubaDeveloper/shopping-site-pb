@@ -3,7 +3,7 @@
 ## Shopping site - ReactTS
 
 <h4 align="center"> 
-    :construction:  Projeto em construção  :construction:
+    :construction:  Project in construction  :construction:
 </h4>
 
 # 🔨 Project functionalities

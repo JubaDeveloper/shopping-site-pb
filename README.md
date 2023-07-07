@@ -1,6 +1,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
-## Shopping site - ReactTS
+## Shopping site - ReactTS 
+
+It's a site to test my skills and knowledge - Feel free to get and make updates
 
 <h4 align="center"> 
     :construction:  Project in construction  :construction:

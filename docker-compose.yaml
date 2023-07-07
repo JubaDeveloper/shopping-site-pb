@@ -1,0 +1,7 @@
+version: "2.0"
+services:
+  shopping-site:
+    image: jubadevop/shopping-app:latest # The final image in registry/docker hub
+    ports:
+      - 3000:80
+    

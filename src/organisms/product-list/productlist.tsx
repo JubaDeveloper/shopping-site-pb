@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import { ProductBox } from "../../molecules/product/productbox";
+import { Link } from "react-router-dom";
 
 interface IProductData {
     imgSrc: string
@@ -8,7 +9,7 @@ interface IProductData {
 }
 
 interface IProductListProp {
-    products: IProductData[]
+    products: (IProductData & { id: string })[]
 }
 
 export const ProductList = ({
@@ -17,12 +18,14 @@ export const ProductList = ({
     return (
        <ul>
             {
-                products.map(({ imgSrc, shortDesc, price}, i) => {
+                products.map(({ imgSrc, shortDesc, price, id }, i) => {
                     return <li key={i}>
-                        <ProductBox 
-                            imgSrc={imgSrc} 
-                            shortDesc={shortDesc} 
-                            price={price}/>
+                        <Link to={`/product/${id}`}>
+                            <ProductBox 
+                                imgSrc={imgSrc} 
+                                shortDesc={shortDesc} 
+                                price={price}/>
+                        </Link>
                     </li>
                 })
             }

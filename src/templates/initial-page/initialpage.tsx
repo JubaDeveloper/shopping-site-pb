@@ -6,7 +6,7 @@ import { ResourceLoading } from "../../organisms/resource-loading/resourceloadin
 
 export const InitialPage = (): ReactElement => {
     const [fetched, setFetched] = useState(false)
-    const [products, setProducts] = useState<{ imgSrc: string, shortDesc: string, price: number | string }[]>([])
+    const [products, setProducts] = useState<{ imgSrc: string, shortDesc: string, price: number | string, id: string }[]>([])
     useEffect(() => {
         fakeApi.getProducts().then((e) => {
             setProducts(e)

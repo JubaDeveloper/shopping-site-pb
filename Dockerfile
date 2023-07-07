@@ -5,6 +5,7 @@ COPY package.json .
 
 FROM base AS prod
 RUN yarn install
+RUN yarn build
 
 FROM nginx
 COPY --from=prod /app/dist /usr/share/nginx/html

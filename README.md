@@ -22,7 +22,7 @@
 
 # ✅ The project technologies
 
-`Docker` - To image build and ci/cd concepts (Pending to come 🕒)
-`TailwindCSS` - The library to make easily work with css ✔️
-`MirageJS` - The library to make tests using fake back-end (Pending to come 🕒)
-`Typescript` - The fully typed language to make more readable your project
+- `Docker` - To image build and ci/cd concepts (Pending to come 🕒)
+- `TailwindCSS` - The library to make easily work with css ✔️
+- `MirageJS` - The library to make tests using fake back-end (Pending to come 🕒)
+- `Typescript` - The fully typed language to make more readable your project

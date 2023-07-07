@@ -26,3 +26,39 @@
 - `TailwindCSS` - The library to make easily work with css ✔️
 - `MirageJS` - The library to make tests using fake back-end (Pending to come 🕒)
 - `Typescript` - The fully typed language to make more readable your project
+- `Vite` - Server to set up the project
+- `React` - The library to make the website
+
+# 🛠️ Installation/Initialization process - Without Docker
+
+- Clone this repository:
+  ```bash
+      git clone https://github.com/JubaDeveloper/shopping-site-pb/ [📁 and path/folder to install it]
+  ```
+- Install all necessary packages:
+   - yarn:
+     ```bash
+      yarn install 
+      ```
+  - npm:
+    ```bash
+      npm install 
+    ```
+- Starting project Dev-Mode
+  - yarn:
+     ```bash
+      yarn dev [--host to expose it to network]
+      ```
+  - npm:
+    ```bash
+      npm run dev [--host to expose it to network]
+    ```
+- Building project to distribuction (Run out of box with nginx for example)
+  - yarn:
+     ```bash
+      yarn build 
+      ```
+  - npm:
+    ```bash
+      npm run build
+    ```

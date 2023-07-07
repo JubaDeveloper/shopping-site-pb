@@ -22,8 +22,13 @@ export const ProductView = ({
                     {shortDesc}
                 </p>
             </div>
-            <div className="w-full h-fit justify-end flex">
-                <button className="bg-black text-white py-5 px-10 rounded-lg text-lg">
+            <div className="w-full h-fit flex flex-row justify-between">
+                <select className="min-h-[10px] max-h-[10px] mt-auto">
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                </select>
+                <button className="bg-black text-white py-3 px-10 rounded-lg text-lg mt-auto">
                     Add to cart
                 </button>
             </div>

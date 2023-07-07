@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-interface IProductProp {
+export interface IProductProp {
     shortDesc: string
     price: number | string
     imgSrc: string
@@ -9,7 +9,7 @@ interface IProductProp {
 export const ProductBox = ({ shortDesc, price, imgSrc }: IProductProp): ReactElement => {
     return (
         <div className="my-2 cursor-pointer select-none rounded-lg md:min-w-[700px] max-w-[700px] h-fit min-h-[200px] flex flex-row gap-[14px] px-5 py-2 hover:shadow-xl">
-            <div className="min-w-[150px] min-h-full flex align-center">
+            <div className="bg-white rounded-lg min-w-[150px] min-h-fit flex items-center justify-center">
                 <img className="max-w-[150px] max-h-[150px]" src={imgSrc} alt="Product image"/>
             </div>
             <div className="w-full max-w-lg text-left py-2">

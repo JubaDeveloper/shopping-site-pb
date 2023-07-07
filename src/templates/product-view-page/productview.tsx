@@ -25,7 +25,7 @@ export const ProductViewPage = () => {
     })
 
     return (
-        <div>
+        <div className="p-2">
             {finishedFetch ? (product && 
             <ProductView 
                 shortDesc={product.shortDesc}

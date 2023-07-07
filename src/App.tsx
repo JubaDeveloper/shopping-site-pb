@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { InitialPage } from "./templates/initial-page/initialpage"
 import { ProductViewPage } from "./templates/product-view-page/productview"
-
+import "./App.css"
 
 function App() {
 

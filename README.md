@@ -20,3 +20,9 @@
 
 <img width="751" alt="Captura de Tela 2023-07-07 às 17 13 29" src="https://github.com/JubaDeveloper/shopping-site-pb/assets/108185479/77e38878-87df-4066-9f5b-11c0e479a342">
 
+# ✅ The project technologies
+
+`Docker` - To image build and ci/cd concepts (Pending to come 🕒)
+`TailwindCSS` - The library to make easily work with css ✔️
+`MirageJS` - The library to make tests using fake back-end (Pending to come 🕒)
+`Typescript` - The fully typed language to make more readable your project

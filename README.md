@@ -84,3 +84,4 @@ It's a site to test my skills and knowledge - Feel free to get and make updates
     ```bash
         docker run -dp 3000:80 --platform linux/x86_64 --name my-container jubadevop/shopping-app:latest 
     ```
+

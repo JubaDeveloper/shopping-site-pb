@@ -82,6 +82,6 @@ It's a site to test my skills and knowledge - Feel free to get and make updates
     ```
   - Go to run it:
     ```bash
-        docker run -dp 3000:80 --platform linux/x86_64 --name my-container jubadevop/shopping-app:latest 
+        docker run -dp 3000:80 --platform linux/x86_64 --name my-container my-own-local-image:latest
     ```
 

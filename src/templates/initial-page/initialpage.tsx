@@ -3,7 +3,7 @@ import { ProductSearch } from "../../molecules/product-search/productsearch"
 import fakeApi from "../../api/fakeApi"
 import { ProductList } from "../../organisms/product-list/productlist"
 import { ResourceLoading } from "../../organisms/resource-loading/resourceloading"
-import { Cart } from "../../molecules/cart/cart"
+import { HeaderBase } from "../../organisms/header-base/headerbase"
 
 interface IProductShape {
     imgSrc: string,
@@ -32,10 +32,12 @@ export const InitialPage = (): ReactElement => {
     }
 
     return (
-        <div className="p-2">
-            <Cart/>
-            <ProductSearch type={"search"} onSearchChange={handleSearchChange}/>
-            {fetched ? <ProductList products={filteredProducts}/> : <ResourceLoading resourceName="Products"/>}
-        </div>
+        <>
+            <HeaderBase/>
+            <div className="p-2">
+                <ProductSearch type={"search"} onSearchChange={handleSearchChange}/>
+                {fetched ? <ProductList products={filteredProducts}/> : <ResourceLoading resourceName="Products"/>}
+            </div>
+        </>
     )
 }

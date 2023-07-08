@@ -29,6 +29,12 @@ const products = [
         price: 5,
         shortDesc: "It's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasks",
         id: "1552"
+    },
+    {
+        imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNjyzu4E0OxQ0rFyGc2iio-B-IA25f2xFeMg&usqp=CAU",
+        price: 5,
+        shortDesc: "It's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasksIt's my cloath which i'm used every day to make my good tasks",
+        id: "1552"
     }
 ]
 

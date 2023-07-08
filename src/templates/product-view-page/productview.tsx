@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react"
+import { ReactElement, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import fakeApi from "../../api/fakeApi"
 import { ResourceLoading } from "../../organisms/resource-loading/resourceloading"
 import { ProductView } from "../../molecules/product-view/productview"
 
-export const ProductViewPage = () => {
+export const ProductViewPage = (): ReactElement => {
     const [finishedFetch, setFinishedFetch] = useState(false)
     const [product, setProduct] = useState<{
         imgSrc: string;
@@ -26,11 +26,11 @@ export const ProductViewPage = () => {
 
     return (
         <div className="p-2">
-            {finishedFetch ? (product && 
-            <ProductView 
+            {finishedFetch ? (product &&
+            <ProductView
                 shortDesc={product.shortDesc}
                 price={product.price}
-                imgSrc={product.imgSrc}/> 
+                imgSrc={product.imgSrc}/>
             ) : <ResourceLoading resourceName="Product"/>}
         </div>
     )

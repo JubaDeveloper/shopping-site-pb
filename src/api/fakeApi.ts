@@ -1,4 +1,9 @@
-import { IProductProp } from "../molecules/product/productbox"
+interface IProductProp {
+    shortDesc: string
+    price: number
+    imgSrc: string
+    id: string
+}
 
 const products = [
     {

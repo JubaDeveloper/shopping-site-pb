@@ -6,8 +6,8 @@ import { ResourceLoading } from "../../organisms/resource-loading/resourceloadin
 
 interface IProductShape {
     imgSrc: string,
-    shortDesc: string, 
-    price: number | string, 
+    shortDesc: string,
+    price: number | string,
     id: string
 }
 
@@ -16,9 +16,9 @@ export const InitialPage = (): ReactElement => {
     const [products, setProducts] = useState<IProductShape[]>([])
     const [filteredProducts, setFilteredProducts] = useState<IProductShape[]>([])
     useEffect(() => {
-        fakeApi.getProducts().then((e) => {
-            setProducts(e)
-            setFilteredProducts(e)
+        fakeApi.getProducts().then((e: unknown) => {
+            setProducts(e as IProductShape[])
+            setFilteredProducts(e as IProductShape[])
             setFetched(true)
         }).catch((e) => {
             console.error(e)

@@ -1,10 +1,11 @@
+import { ReactElement } from "react"
 import { IProductProp } from "../product/productbox"
 
 export const ProductView = ({
     imgSrc,
     shortDesc,
     price
-}: IProductProp) => {
+}: IProductProp): ReactElement => {
     return (
         <div className="md:max-w-[750px] font-rbs tracking-wider p-2 flex flex-col gap-10">
             <div className="flex flex-row justify-between px-4">

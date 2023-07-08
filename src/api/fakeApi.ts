@@ -1,3 +1,5 @@
+import { IProductProp } from "../molecules/product/productbox"
+
 const products = [
     {
         imgSrc: "https://m.media-amazon.com/images/I/61YSNhAb00L._AC_UF1000,1000_QL80_.jpg",
@@ -26,11 +28,11 @@ const products = [
 ]
 
 export default {
-    getProducts: async () => {
+    getProducts: async (): Promise<IProductProp[]> => {
         await new Promise(resolve => setTimeout(() => { resolve("") }, 1000))
         return products
     },
-    getProductById: async ({ id }: { id: string })  => {
+    getProductById: async ({ id }: { id: string }): Promise<IProductProp | undefined>  => {
         await new Promise(resolve => setTimeout(() => { resolve("") }, 1000))
         return products.find(p => p.id == id)
     }

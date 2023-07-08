@@ -21,9 +21,9 @@ export const ProductList = ({
                 products.map(({ imgSrc, shortDesc, price, id }, i) => {
                     return <li key={i}>
                         <Link to={`/product/${id}`}>
-                            <ProductBox 
-                                imgSrc={imgSrc} 
-                                shortDesc={shortDesc} 
+                            <ProductBox
+                                imgSrc={imgSrc}
+                                shortDesc={shortDesc}
                                 price={price}/>
                         </Link>
                     </li>

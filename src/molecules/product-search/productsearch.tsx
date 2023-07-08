@@ -9,8 +9,8 @@ export const ProductSearch = ({
     onSearchChange,
     type = "text" // Default
 }: IProductSearchProps): ReactElement => {
-    
-    const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
+
+    const handleSearchChange = (e: ChangeEvent<HTMLInputElement>): void => {
         const { target: { value } } = e
         onSearchChange(value)
     }

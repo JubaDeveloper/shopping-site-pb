@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import fakeApi from "../../api/fakeApi"
 import { ResourceLoading } from "../../organisms/resource-loading/resourceloading"
 import { ProductView } from "../../molecules/product-view/productview"
+import { HeaderBase } from "../../organisms/header-base/headerbase"
 
 export const ProductViewPage = (): ReactElement => {
     const [finishedFetch, setFinishedFetch] = useState(false)
@@ -25,13 +26,17 @@ export const ProductViewPage = (): ReactElement => {
     })
 
     return (
-        <div className="p-2">
-            {finishedFetch ? (product &&
-            <ProductView
-                shortDesc={product.shortDesc}
-                price={product.price}
-                imgSrc={product.imgSrc}/>
-            ) : <ResourceLoading resourceName="Product"/>}
-        </div>
+        <>
+            <HeaderBase/>
+            <div className="p-2">
+                {finishedFetch ? (product &&
+                <ProductView
+                    shortDesc={product.shortDesc}
+                    price={product.price}
+                    id={product.id}
+                    imgSrc={product.imgSrc}/>
+                ) : <ResourceLoading resourceName="Product"/>}
+            </div>
+        </>
     )
 }

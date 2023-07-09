@@ -9,26 +9,27 @@ export const ProductView = ({
     price,
     id
 }: IProductProp): ReactElement => {
-    const [cartItems, setCartItems] = useLocalStorage<ICartItemsShape[]>("@cart-items", [])
     const [quantyToAdd, setQuantyToAdd] = useState(1)
+    // const [cartItems, setCartItems] = useLocalStorage<ICartItemsShape[]>("@cart-items", [])
 
-    const updateCartItems = (): void => {
-        const refItemIndex = cartItems.findIndex(item => item.itemId == id)
-        if (refItemIndex != -1) {
-            const updatingItems = cartItems.copyWithin(0)
-            updatingItems[refItemIndex] = {
-                ...updatingItems[refItemIndex],
-                count: updatingItems[refItemIndex].count + 1
-            }
 
-            setCartItems(updatingItems)
-            return
-        }
-        setCartItems([...cartItems, {
-            count: 1,
-            itemId: id
-        }])
-    }
+    // const updateCartItems = (): void => {
+    //     const refItemIndex = cartItems.findIndex(item => item.itemId == id)
+    //     if (refItemIndex != -1) {
+    //         const updatingItems = cartItems.copyWithin(0)
+    //         updatingItems[refItemIndex] = {
+    //             ...updatingItems[refItemIndex],
+    //             count: updatingItems[refItemIndex].count + 1
+    //         }
+
+    //         setCartItems(updatingItems)
+    //         return
+    //     }
+    //     setCartItems([...cartItems, {
+    //         count: 1,
+    //         itemId: id
+    //     }])
+    // }
 
     return (
         <div className="md:max-w-[750px] font-rbs tracking-wider p-2 flex flex-col gap-10">

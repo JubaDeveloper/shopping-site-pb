@@ -11,7 +11,7 @@ jobs:
             matrix:
                 os: [ubuntu-latest]
                 shell: [bash]
-                node_version: ["18-alpine"]
+                node_version: ["18"]
         runs-on: ${{ matrix.os }}
         steps:
             - id: checkout

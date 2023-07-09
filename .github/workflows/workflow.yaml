@@ -6,7 +6,27 @@ on:
         branches: 
             - master
 jobs:
+    test:
+        strategy:
+            matrix:
+                os: [ubuntu-latest]
+                shell: [bash]
+                node_version: ["18-alpine"]
+        runs-on: ${{ matrix.os }}
+        steps:
+            - id: checkout
+              name: Checkout
+              uses: actions/checkout@v3
+            - id: testing
+              name: Testing the app
+              uses: actions/setup-node@v3
+              with:
+                node-version: ${{ matrix.node_version }}
+            - run: npm i -g yarn
+            - run: yarn install
+            - run: yarn test
     build:
+        needs: [test]
         strategy:
             matrix:
                 os: [ubuntu-latest]

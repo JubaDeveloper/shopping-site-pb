@@ -1,4 +1,9 @@
 {
+  "ts-node": {
+    "ignore": [
+      "(?:^|/)node_modules/"
+    ]
+  },
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -18,7 +23,27 @@
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Mapping */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/mol/*": [
+        "./src/molecules/*"
+      ],
+      "@/org/*": [
+        "./src/organisms/*"
+      ],
+      "@/hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@/templates/*": [
+        "./src/templates/*"
+      ]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

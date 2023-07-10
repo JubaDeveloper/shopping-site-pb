@@ -17,13 +17,9 @@ export const ProductList = ({
     return (
        <ul>
             {
-                products.map(({ imgSrc, shortDesc, price, id }, i) => {
+                products.map((p, i) => {
                     return <li key={i}>
-                        <ProductBox
-                            imgSrc={imgSrc}
-                            shortDesc={shortDesc}
-                            id={id}
-                            price={price}/>
+                        <ProductBox {...p}/>
                     </li>
                 })
             }

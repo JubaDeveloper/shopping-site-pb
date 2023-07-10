@@ -35,7 +35,7 @@ export const InitialPage = (): ReactElement => {
         <>
             <HeaderBase/>
             <div className="p-2">
-                <ProductSearch type={"search"} onSearchChange={handleSearchChange}/>
+                <ProductSearch type={"search"} onSearch={handleSearchChange}/>
                 {fetched ? <ProductList products={filteredProducts}/> : <ResourceLoading resourceName="Products"/>}
             </div>
         </>

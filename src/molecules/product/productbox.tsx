@@ -17,7 +17,7 @@ export const ProductBox = ({ shortDesc, price, imgSrc, id }: IProductProp): Reac
     }
 
     return (
-        <div className="my-2 select-none rounded-lg md:min-w-[700px] max-w-[700px] h-fit min-h-[200px] flex flex-row gap-[14px] px-5 py-2 hover:shadow-xl">
+        <div data-testid={"product-box"} className="my-2 select-none rounded-lg md:min-w-[700px] max-w-[700px] h-fit min-h-[200px] flex flex-row gap-[14px] px-5 py-2 hover:shadow-xl">
             <div className="bg-white rounded-lg min-w-[150px] min-h-fit flex items-center justify-center">
                 <img className="max-w-[150px] max-h-[150px]" src={imgSrc} alt="Product image"/>
             </div>

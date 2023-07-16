@@ -1,5 +1,5 @@
 ## The workflow to make ci/cd process
-name: ci-cd-react-app
+name: ci-react-app
 ## When to run it? It says it
 on:
     push:

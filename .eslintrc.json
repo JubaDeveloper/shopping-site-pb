@@ -22,6 +22,7 @@
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/quotes": ["error", "double"],
     "no-trailing-spaces": "error",
-    "@typescript-eslint/explicit-function-return-type": "error"
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "react-hooks/exhaustive-deps": "off"
   }
 }

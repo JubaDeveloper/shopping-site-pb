@@ -1,7 +1,7 @@
 import { ReactElement, useState } from "react"
-import { IProductProp } from "../product/productbox"
 import { useLocalStorage } from "usehooks-ts"
 import { ICartItemsShape } from "../cart/cart"
+import { IProductProp } from "../product/productbox"
 
 export const ProductView = ({
     imgSrc,
@@ -19,14 +19,14 @@ export const ProductView = ({
             const updatingItems = cartItems.copyWithin(0)
             updatingItems[refItemIndex] = {
                 ...updatingItems[refItemIndex],
-                count: updatingItems[refItemIndex].count + 1
+                count: updatingItems[refItemIndex].count + quantyToAdd
             }
 
             setCartItems(updatingItems)
             return
         }
         setCartItems([...cartItems, {
-            count: 1,
+            count: quantyToAdd,
             itemId: id
         }])
     }
@@ -75,7 +75,7 @@ export const ProductView = ({
                         </span>
                     </div>
                 </div>
-                <button className="bg-black text-white py-3 px-10 rounded-lg text-lg mt-auto">
+                <button onClick={updateCartItems} className="bg-black text-white py-3 px-10 rounded-lg text-lg mt-auto">
                     Add to cart
                 </button>
             </div>

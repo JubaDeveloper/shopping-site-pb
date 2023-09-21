@@ -11,13 +11,13 @@ export interface IProductProp {
 export const ProductBox = ({ shortDesc, price, imgSrc, id }: IProductProp): ReactElement => {
     const navigate = useNavigate()
 
-    const navigateToCart = (): void => {
+    const navigateToProductView = (): void => {
         navigate(`/product/${id}`, {
         })
     }
 
     return (
-        <div onClick={navigateToCart} data-testid={"product-box"} className="cursor-pointer my-2 select-none rounded-lg md:min-w-[700px] max-w-[700px] h-fit min-h-[200px] flex flex-row gap-[14px] px-5 py-2 hover:shadow-xl">
+        <div onClick={navigateToProductView} data-testid={"product-box"} className="cursor-pointer my-2 select-none rounded-lg md:min-w-[700px] max-w-[700px] h-fit min-h-[200px] flex flex-row gap-[14px] px-5 py-2 hover:shadow-xl">
             <div className="bg-white rounded-lg min-w-[150px] min-h-fit flex items-center justify-center">
                 <img className="max-w-[150px] max-h-[150px]" src={imgSrc} alt="Product image"/>
             </div>

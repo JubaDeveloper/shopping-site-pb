@@ -1,4 +1,5 @@
 import { ReactElement, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { useLocalStorage } from "usehooks-ts"
 import { ICartItemsShape } from "../cart/cart"
 import { IProductProp } from "../product/productbox"
@@ -11,6 +12,7 @@ export const ProductView = ({
 }: IProductProp): ReactElement => {
     const [quantyToAdd, setQuantyToAdd] = useState(1)
     const [cartItems, setCartItems] = useLocalStorage<ICartItemsShape[]>("@cart-items", [])
+    const navigate = useNavigate()
 
 
     const updateCartItems = (): void => {
@@ -23,12 +25,14 @@ export const ProductView = ({
             }
 
             setCartItems(updatingItems)
+            navigate("/cart")
             return
         }
         setCartItems([...cartItems, {
             count: quantyToAdd,
             itemId: id
         }])
+        navigate("/cart")
     }
 
     return (

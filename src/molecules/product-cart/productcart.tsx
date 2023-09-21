@@ -18,7 +18,7 @@ export const ProductCart = ({
     }
 
     const handleQuantyChange = (count: number): void => {
-        const ref = itemsStorage.copyWithin(0)
+        const ref = itemsStorage.copyWithin(0, 0)
         const item = ref.find(item => item.itemId === id)
         if (item) {
             item.count = count

@@ -16,7 +16,7 @@ export const ProductView = ({
     const updateCartItems = (): void => {
         const refItemIndex = cartItems.findIndex(item => item.itemId == id)
         if (refItemIndex != -1) {
-            const updatingItems = cartItems.copyWithin(0)
+            const updatingItems = cartItems.copyWithin(0, 0)
             updatingItems[refItemIndex] = {
                 ...updatingItems[refItemIndex],
                 count: updatingItems[refItemIndex].count + quantyToAdd
